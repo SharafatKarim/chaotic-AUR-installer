@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+# chaotic-AUR-installer
+A simple script to install [chaotic AUR](https://aur.chaotic.cx/) third party repo in arch linux or arch based distros!
 
-You can use the [editor on GitHub](https://github.com/SharafatKarim/chaotic-AUR-installer/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## What is Chaotic-AUR?
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Automated building repo for AUR packages. Check their [GithHub repo](https://github.com/chaotic-aur).
 
-### Markdown
+## How to use?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Just run this following one line command in your terminal to run this script, simple!
 
-```markdown
-Syntax highlighted code block
+`wget -q -O chaotic-AUR-installer.bash https://raw.githubusercontent.com/SharafatKarim/chaotic-AUR-installer/main/install.bash && bash chaotic-AUR-installer.bash && rm chaotic-AUR-installer.bash`
 
-# Header 1
-## Header 2
-### Header 3
+As an alternative, you can git clone this repository and run the script (`install.bash`) manually.
 
-- Bulleted
-- List
+## Why this script is that much large?
 
-1. Numbered
-2. List
+Besides intallation, this script will also check wheather it's previously installed and this script can also take actions such as uncommenting lines from pacman's config file or downloading and moving mirrorlist. So read the script before running! It's easy to understand. If you have any suggestions feel free to tell [me](t.me/SharafatKarim).
 
-**Bold** and _Italic_ and `Code` text
+## FAQ
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SharafatKarim/chaotic-AUR-installer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Nothing asked yet!
