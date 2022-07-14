@@ -1,5 +1,5 @@
 # chaotic-AUR-installer
-A simple script to install [chaotic AUR](https://aur.chaotic.cx/) in arch linux or arch based distros!
+A simple script to install [chaotic AUR](https://aur.chaotic.cx/) third party repo in arch linux or arch based distros!
 
 ## What is Chaotic-AUR?
 
