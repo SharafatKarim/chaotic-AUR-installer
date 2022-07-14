@@ -16,3 +16,7 @@ As an alternative, you can git clone this repository and run the script (`instal
 ## Why this script is that much large?
 
 Besides intallation, this script will also check wheather it's previously installed and this script can also take actions such as uncommenting lines from pacman's config file or downloading and moving mirrorlist. So read the script before running! It's easy to understand. If you have any suggestions feel free to tell [me](t.me/SharafatKarim).
+
+## FAQ
+
+Nothing asked yet!
