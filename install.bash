@@ -86,6 +86,10 @@ then
     echo -e "${Green}Trying to enable it,${NC}"
     sed -i 's/#\[chaotic-aur\]/\[chaotic-aur\]/' /etc/pacman.conf
     sed -i 's/#Include\ =\ \/etc\/pacman.d\/xero-mirrorlist/Include\ =\ \/etc\/pacman.d\/xero-mirrorlist/' /etc/pacman.conf
+
+    echo -e "${Green}This process needs super user permission (sudo). So please read the bash script if needed. If you've doubt about any line of the script, please don't run this or tell us!${NC}"
+    su
+
     check-mirror-exists
 else
     echo -e "${Green}Chaotic AUR is not installed!${NC}"
