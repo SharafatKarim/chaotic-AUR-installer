@@ -8,7 +8,7 @@ chaotic-aur-mirrorlist-setup()
 {
     echo ""
     wget -q -O chaotic-mirrorlist "https://raw.githubusercontent.com/chaotic-aur/pkgbuild-chaotic-mirrorlist/main/mirrorlist"
-    mv chaotic-mirrorlist /etc/pacman.d/chaotic-mirrorlist
+    sudo mv chaotic-mirrorlist /etc/pacman.d/chaotic-mirrorlist
 }
 
 system-update()
@@ -37,29 +37,28 @@ check-mirror-exists()
 
 config-file-append()
 {
-echo -e "" >> /etc/pacman.conf
-echo -e "#Chaotic-AUR" >> /etc/pacman.conf
-echo -e "[chaotic-aur]" >> /etc/pacman.conf
-echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
+sudo echo -e "#Chaotic-AUR" >> /etc/pacman.conf
+sudo echo -e "" >> /etc/pacman.conf
+sudo echo -e "[chaotic-aur]" >> /etc/pacman.conf
+sudo echo -e "Include = /etc/pacman.d/chaotic-mirrorlist" >> /etc/pacman.conf
 check-mirror-exists
 }
 
 make-sure-system-is-updated()
 {
 echo -e "${Green}To avoid unknown errors, let's make sure system is updated${NC}"
-pacman -Syu
+sudo pacman -Syu
 }
 
 let-s-install-it()
 {
 echo -e "${Green}This process needs super user permission (sudo). So please read the bash script if needed. If you've doubt about any line of the script, please don't run this or tell us!${NC}"
-su
 
 make-sure-system-is-updated
 
-pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-pacman-key --lsign-key FBA220DFC880C036
-pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key FBA220DFC880C036
+sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 
 echo ""
 echo -e "${Green}Please don't continue any further if you have encountered any error! In this case you can run this script again or do things manully! You'll find guideline in the official page.${NC}"
@@ -84,11 +83,12 @@ if grep --quiet -x '#\[chaotic-aur\]' '/etc/pacman.conf' || grep --quiet -x '#In
 then
     echo -e "${Green}Chaotic AUR is installed but disabled!${NC}"
     echo -e "${Green}Trying to enable it,${NC}"
-    sed -i 's/#\[chaotic-aur\]/\[chaotic-aur\]/' /etc/pacman.conf
-    sed -i 's/#Include\ =\ \/etc\/pacman.d\/xero-mirrorlist/Include\ =\ \/etc\/pacman.d\/xero-mirrorlist/' /etc/pacman.conf
+
 
     echo -e "${Green}This process needs super user permission (sudo). So please read the bash script if needed. If you've doubt about any line of the script, please don't run this or tell us!${NC}"
-    su
+
+    sudo sed -i 's/#\[chaotic-aur\]/\[chaotic-aur\]/' /etc/pacman.conf
+    sudo sed -i 's/#Include\ =\ \/etc\/pacman.d\/xero-mirrorlist/Include\ =\ \/etc\/pacman.d\/xero-mirrorlist/' /etc/pacman.conf
 
     check-mirror-exists
 else
