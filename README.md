@@ -9,7 +9,7 @@ Automated building repo for AUR packages. Check their [GithHub repo](https://git
 
 Just run this following one line command in your terminal to run this script, simple!
 
-`wget -q -O chaotic-AUR-installer.bash https://raw.githubusercontent.com/SharafatKarim/chaotic-AUR-installer/main/install.bash && bash chaotic-AUR-installer.bash && rm chaotic-AUR-installer.bash`
+`wget -q -O chaotic-AUR-installer.bash https://raw.githubusercontent.com/SharafatKarim/chaotic-AUR-installer/main/install.bash && sudo bash chaotic-AUR-installer.bash && rm chaotic-AUR-installer.bash`
 
 As an alternative, you can git clone this repository and run the script (`install.bash`) manually.
 
