@@ -35,5 +35,5 @@ Besides installation, this script will also check whether it's previously instal
 Nothing asked yet!
 
 ## Stats
-//repobeats.axiom.co
+// repobeats.axiom.co
 ![Alt](https://repobeats.axiom.co/api/embed/0d6ba0c0d5129c426272cb217d230b8c91a55f12.svg "Repobeats analytics image")
