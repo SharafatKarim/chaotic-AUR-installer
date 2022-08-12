@@ -11,6 +11,8 @@ AUR stands for Arch User repository. It's maintained by a third party but pkgbui
 
 Automated building repo for AUR packages. Check their [Github repo](https://github.com/chaotic-aur).
 
+<img src="chaoticAUR.png">
+
 As I said earlier,
 "It (AUR) actually doesn't store any package files or any binary. Instead it tells the system where to look for the binary and how to build it from source into a binary package for installation."
 Suppose you are trying to install a web browser through AUR. So for building it from source, you need other packages like compilers. It may take extra data and effort. And let's not forget the chance of failure during the building process and high CPU usage. It can even freeze your PC. You can uninstall those dependency packages (other packages like compilers) but while updating that application, you'll need those dependencies to build it again from source. And the whole process may take even several hours (worst case scenario).
