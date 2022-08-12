@@ -9,25 +9,26 @@ AUR stands for Arch User repository. It's maintained by a third party but pkgbui
 
 ## What is Chaotic-AUR?
 
-Automated building repo for AUR packages. Check their [GithHub repo](https://github.com/chaotic-aur).
+Automated building repo for AUR packages. Check their [Github repo](https://github.com/chaotic-aur).
 
 As I said earlier,
 "It (AUR) actually doesn't store any package files or any binary. Instead it tells the system where to look for the binary and how to build it from source into a binary package for installation."
 Suppose you are trying to install a web browser through AUR. So for building it from source, you need other packages like compilers. It may take extra data and effort. And let's not forget the chance of failure during the building process and high CPU usage. It can even freeze your PC. You can uninstall those dependency packages (other packages like compilers) but while updating that application, you'll need those dependencies to build it again from source. And the whole process may take even several hours (worst case scenario).
 So, here comes chaotic AUR. It actually builds those packages constantly using bots and prepares the binary/ compiled package for your ease of access. So that you don't have to waste time building those packages!
 
-## How to use?
+## How to use it?
 
-Just run this following one line command in your terminal to run this script, simple!
+Just run the following one line command in your terminal to run this script, simple!
 
 ```wget -q -O chaotic-AUR-installer.bash https://raw.githubusercontent.com/SharafatKarim/chaotic-AUR-installer/main/install.bash && sudo bash chaotic-AUR-installer.bash && rm chaotic-AUR-installer.bash```
 
 As an alternative, you can git clone this repository and run the script as root (`install.bash`) manually.
 
-## Why this script is that much large?
+## Why is this script so large?
 
-Besides intallation, this script will also check wheather it's previously installed and this script can also take actions such as uncommenting lines from pacman's config file or downloading and moving mirrorlist. So read the script before running! It's easy to understand. If you have any suggestions feel free to tell [me](t.me/SharafatKarim).
+Besides installation, this script will also check whether it's previously installed and this script can also take actions such as uncommenting lines from pacman's config file or downloading and moving mirrorlist. So read the script before running! It's easy to understand. If you have any suggestions feel free to tell [me](t.me/SharafatKarim).
 
 ## FAQ
 
 Nothing asked yet!
+
