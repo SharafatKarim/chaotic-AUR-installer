@@ -32,7 +32,12 @@ Besides installation, this script will also check whether it's previously instal
 
 ## FAQ
 
-Nothing asked yet!
+### invalid or corrupted package (keys signature)?
+In this case install (if not installed) or, update the `chaotic-keyring` package with,
+
+```bash
+sudo pacman -Sy chaotic-keyring
+```
 
 ## Stats
 
