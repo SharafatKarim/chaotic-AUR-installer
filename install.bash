@@ -13,7 +13,7 @@ chaotic-aur-mirrorlist-setup()
 
 system-update()
 {
-    pacman -Syu
+    pacman -Syu chaotic-keyring
 }
 
 check-mirror-exists()
@@ -22,7 +22,7 @@ check-mirror-exists()
     then
         echo ""
         echo -e "${Green}Chaotic AUR is successfully installed,${NC}"
-        echo -e "${Green}Now we'll check for a system update!${NC}"
+        echo -e "${Green}Now we'll check for a system update with keyring!${NC}"
         echo ""
         system-update
     else
