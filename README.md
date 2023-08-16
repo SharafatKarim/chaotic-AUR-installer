@@ -22,7 +22,9 @@ So, here comes chaotic AUR. It actually builds those packages constantly using b
 
 Just run the following one line command in your terminal to run this script, simple!
 
-```wget -q -O chaotic-AUR-installer.bash https://raw.githubusercontent.com/SharafatKarim/chaotic-AUR-installer/main/install.bash && sudo bash chaotic-AUR-installer.bash && rm chaotic-AUR-installer.bash```
+```
+wget -q -O chaotic-AUR-installer.bash https://raw.githubusercontent.com/SharafatKarim/chaotic-AUR-installer/main/install.bash && sudo bash chaotic-AUR-installer.bash && rm chaotic-AUR-installer.bash
+```
 
 As an alternative, you can git clone this repository and run the script as root (`install.bash`) manually.
 
